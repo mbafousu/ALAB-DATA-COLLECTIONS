@@ -12,13 +12,13 @@ const csvData = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\
 
 const rows = csvData.split("\n");
 const headers = rows[0].split(",");
-const records = {};
+const records = [];
 
 // 4. Loop through data rows starting at 1
 
 for (let i = 1; i < rows.length; i++) {
     const cells = rows[i].split(",");
-    const record = {};
+    const record = [];
 
 
     
